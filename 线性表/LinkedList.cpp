@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
- * 无头结点的单链表的实现 
+ * 无头结点的单链表
  * 
  */
 typedef struct Node{
