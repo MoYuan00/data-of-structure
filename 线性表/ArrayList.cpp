@@ -1,5 +1,5 @@
 /*
-动态分配的顺序存储结构的线性表实现
+    动态分配的顺序存储结构的线性表实现
 */
 #include<stdio.h>
 #include<stdlib.h>
@@ -46,10 +46,16 @@ bool Delete(List& list, int index){
     list.len--;// 长度减1
     return true;
 }
+// 获取到第index个元素
+ElemType GetElem(List list, int index){
+    if(index < 1 || index > list.len)
+    return 0xfffff;
+    return list.data[index];
+}
 // 显示链表
 void Show(List list){
     for(int i = 1; i <= list.len; i++){
-        cout << list.data[i] << ",";
+        cout << GetElem(list, i) << ",";
     }
     cout << endl;
 }
