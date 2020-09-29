@@ -92,7 +92,7 @@ void build(ArrayList list, int k, int len){
 }
 // 堆排序
 void HeapSort(ArrayList list){
-    // 构造大顶堆（由小到大排序）
+    // 构造大根堆（由小到大排序）
     //1.  从最后一个非叶子节点向前构造 
     //2. （每次交换元素可能会破坏孩子的大堆顶，交换后需要对 交换对象的孩子从上向下构造）
     for(int i = list.length / 2; i >= 1; i--){
